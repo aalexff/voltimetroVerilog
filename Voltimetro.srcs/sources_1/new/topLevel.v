@@ -22,13 +22,15 @@
 
 module topLevel(
     input wire reset, clk, [1:0] j1a2,
-    output wire [11:0] leds, cat
+    output wire [11:0] leds, dig
     );
     
     //instanciacion
     xadc xadcinst(
-                  .reset(reset),
-                  .clk(clk),
-                  .j1a2(j1a2)
+                  .RST(reset),
+                  .CLK_100(clk),
+                  .J1A2(j1a2),
+                  .LEDS(leds),
+                  .DIGIT(dig)
                   );
 endmodule
