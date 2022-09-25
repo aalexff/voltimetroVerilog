@@ -21,16 +21,25 @@
 
 
 module topLevel(
-    input wire reset, clk, [1:0] j1a2,
-    output wire [11:0] leds, dig
+    input wire RST, CLK_100, [1:0] J1A2,
+    output wire [11:0] LEDS, DIGIT
     );
     
     //instanciacion
     xadc xadcinst(
-                  .RST(reset),
-                  .CLK_100(clk),
-                  .J1A2(j1a2),
-                  .LEDS(leds),
-                  .DIGIT(dig)
+                  .RST(RST),
+                  .CLK_100(CLK_100),
+                  .J1A2(J1A2),
+                  .LEDS(LEDS),
+                  .DIGIT(DIGIT)
                   );
+   /*
+    freqdiv freqdivinst(
+                        );
+    mux muxinst(
+                 );
+    decoder decoderinst(
+                        );
+                    
+                    */
 endmodule
