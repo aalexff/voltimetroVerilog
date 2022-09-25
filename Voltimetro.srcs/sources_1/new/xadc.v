@@ -22,12 +22,12 @@
 
 module xadc(
     input CLK_100, RST, [1:0] J1A2,
-    output DIGIT, [11:0] LEDS
+    output [11:0] DIGIT, [11:0] LEDS
     );
     
     wire [15:0] vauxp;
     wire [15:0] vauxn;
-    wire [15:0] reading ;
+    wire [15:0] reading;
     
     assign vauxp[6] = J1A2[1];
     assign vauxn[6] = J1A2[0];

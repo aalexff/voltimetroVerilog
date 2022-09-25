@@ -1,0 +1,64 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Sep 25 12:17:05 2022
+# Process ID: 9352
+# Current directory: C:/Users/Administrador/Desktop/Alex/11vo Semestre/FPGA y SOC/Unidad 2/Practica 2/Voltimetro/Voltimetro.runs/synth_1
+# Command line: vivado.exe -log topLevel.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source topLevel.tcl
+# Log file: C:/Users/Administrador/Desktop/Alex/11vo Semestre/FPGA y SOC/Unidad 2/Practica 2/Voltimetro/Voltimetro.runs/synth_1/topLevel.vds
+# Journal file: C:/Users/Administrador/Desktop/Alex/11vo Semestre/FPGA y SOC/Unidad 2/Practica 2/Voltimetro/Voltimetro.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source topLevel.tcl -notrace
+Command: synth_design -top topLevel -part xc7a35ticsg324-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Device 21-403] Loading part xc7a35ticsg324-1L
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 14452 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 727.500 ; gain = 177.016
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'topLevel' [C:/Users/Administrador/Desktop/Alex/11vo Semestre/FPGA y SOC/Unidad 2/Practica 2/Voltimetro/Voltimetro.srcs/sources_1/new/topLevel.v:23]
+INFO: [Synth 8-6157] synthesizing module 'xadc' [C:/Users/Administrador/Desktop/Alex/11vo Semestre/FPGA y SOC/Unidad 2/Practica 2/Voltimetro/Voltimetro.srcs/sources_1/new/xadc.v:23]
+INFO: [Synth 8-6157] synthesizing module 'XADC' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:81848]
+	Parameter INIT_40 bound to: 16'b0011000000010110 
+	Parameter INIT_41 bound to: 16'b0011111110101111 
+	Parameter INIT_42 bound to: 16'b0000010000000000 
+	Parameter INIT_43 bound to: 16'b0000000000000000 
+	Parameter INIT_44 bound to: 16'b0000000000000000 
+	Parameter INIT_45 bound to: 16'b0000000000000000 
+	Parameter INIT_46 bound to: 16'b0000000000000000 
+	Parameter INIT_47 bound to: 16'b0000000000000000 
+	Parameter INIT_48 bound to: 16'b0000000000000000 
+	Parameter INIT_49 bound to: 16'b0000000000000000 
+	Parameter INIT_4A bound to: 16'b0000000000000000 
+	Parameter INIT_4B bound to: 16'b0000000000000000 
+	Parameter INIT_4C bound to: 16'b0000000000000000 
+	Parameter INIT_4D bound to: 16'b0000000000000000 
+	Parameter INIT_4E bound to: 16'b0000000000000000 
+	Parameter INIT_4F bound to: 16'b0000000000000000 
+	Parameter INIT_50 bound to: 16'b0000000000000000 
+	Parameter INIT_51 bound to: 16'b0000000000000000 
+	Parameter INIT_52 bound to: 16'b0000000000000000 
+	Parameter INIT_53 bound to: 16'b0000000000000000 
+	Parameter INIT_54 bound to: 16'b0000000000000000 
+	Parameter INIT_55 bound to: 16'b0000000000000000 
+	Parameter INIT_56 bound to: 16'b0000000000000000 
+	Parameter INIT_57 bound to: 16'b0000000000000000 
+	Parameter INIT_58 bound to: 16'b0000000000000000 
+	Parameter INIT_59 bound to: 16'b0000000000000000 
+	Parameter INIT_5A bound to: 16'b0000000000000000 
+	Parameter INIT_5B bound to: 16'b0000000000000000 
+	Parameter INIT_5C bound to: 16'b0000000000000000 
+	Parameter INIT_5D bound to: 16'b0000000000000000 
+	Parameter INIT_5E bound to: 16'b0000000000000000 
+	Parameter INIT_5F bound to: 16'b0000000000000000 
+	Parameter IS_CONVSTCLK_INVERTED bound to: 1'b0 
+	Parameter IS_DCLK_INVERTED bound to: 1'b0 
+	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
+	Parameter SIM_MONITOR_FILE bound to: design.txt - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'XADC' (1#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:81848]
+INFO: [Synth 8-6155] done synthesizing module 'xadc' (2#1) [C:/Users/Administrador/Desktop/Alex/11vo Semestre/FPGA y SOC/Unidad 2/Practica 2/Voltimetro/Voltimetro.srcs/sources_1/new/xadc.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'topLevel' (3#1) [C:/Users/Administrador/Desktop/Alex/11vo Semestre/FPGA y SOC/Unidad 2/Practica 2/Voltimetro/Voltimetro.srcs/sources_1/new/topLevel.v:23]
