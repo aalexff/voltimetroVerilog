@@ -22,7 +22,7 @@
 
 module topLevel(
     input wire RST, CLK_100, [1:0] J1A2,
-    output wire [11:0] LEDS, DIGIT
+    output wire [11:0] LEDS, [11:0] DIGIT
     );
     
     //instanciacion
