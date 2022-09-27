@@ -46,6 +46,14 @@ module topLevel(
                     .Clk60Hz(CLK_60),
                     .Clk1Hz (CLK_1)
                         );
+    
+    Cuantifcador cuantificadorinst(
+                    
+                  );
+                  
+    Convertidor convertidorinst(
+                    
+                  );
  
     mux muxinst(
                     .Clk60Hz(CLK_60),
