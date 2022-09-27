@@ -22,13 +22,14 @@
 
 module topLevel(
     input wire RST, CLK_100, [1:0] J1A2,
-    output wire CLK_60, [6:0]SEG7
+    output wire CLK_1, [6:0]SEG7, catodo
     );
     
     reg [11:0] LEDS;
     reg [11:0]DIGIT;
-    reg CLK_1;
+    reg CLK_60;
     reg BCD;
+    reg unidades, decenas;
     
     //instanciacion
     xadc xadcinst(
@@ -39,16 +40,21 @@ module topLevel(
                   .DIGIT(DIGIT)
                   );
    
-    freqdiv freqdivinst(
+    freqDiv freqdivinst(
                     .Clk100MHz(CLK_100),
                     .Reset(RST),
                     .Clk60Hz(CLK_60),
                     .Clk1Hz (CLK_1)
                         );
- /*
+ 
     mux muxinst(
+                    .Clk60Hz(CLK_60),
+                    .BCDD(decenas),
+                    .BCDU(unidades),
+                    .BCD(BCD),
+                    .Catodo(catodo)
                  );
- */
+ 
     decoder decoderinst(
                     .BCD(BCD),
                     .SEG7(SEG7)
